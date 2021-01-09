@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="UsersInterface.uController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="800.0">
+      <children>
+        <Pane fx:id="tablecheck" layoutX="0.0" layoutY="0.0" prefHeight="526.0" prefWidth="800.0" visible="true">
+          <children>
+            <TableView fx:id="displayUser" layoutX="0.0" layoutY="0.0" prefHeight="527.0" prefWidth="800.0" visible="true">
+              <columns>
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="71.0" text="吧号" fx:id="bnum" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="327.0" text="帖子" fx:id="posts" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="339.0" text="评论" fx:id="comm" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="61.0" text="点赞数" fx:id="fabs" />
+              </columns>
+            </TableView>
+          </children>
+        </Pane>
+        <Pane layoutX="0.0" layoutY="527.0" prefHeight="73.0" prefWidth="800.0" visible="true">
+          <children>
+            <Button id="Fab" fx:id="Fabs" layoutX="360.0" layoutY="19.0" mnemonicParsing="false" onAction="#tofabs" prefHeight="35.0" prefWidth="80.0" text="赞">
+              <font>
+                <Font size="20.0" fx:id="x1" />
+              </font>
+            </Button>
+          </children>
+        </Pane>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Register.risController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="200.0" prefWidth="650.0">
+      <children>
+        <ImageView fitHeight="200.0" fitWidth="650.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+          <image>
+            <Image url="@../Image/logmain.png" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+    <Pane layoutX="0.0" layoutY="200.0" prefHeight="350.0" prefWidth="650.0">
+      <children>
+        <Label layoutX="311.0" layoutY="40.0" prefHeight="35.0" prefWidth="80.0" text="用户名:">
+          <font>
+            <Font size="20.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="311.0" layoutY="89.0" prefHeight="35.0" prefWidth="80.0" text="密码:" />
+        <Label font="$x1" layoutX="311.0" layoutY="135.0" prefHeight="35.0" prefWidth="80.0" text="性别：" />
+        <Label font="$x1" layoutX="311.0" layoutY="183.0" prefHeight="35.0" prefWidth="80.0" text="年龄:" />
+        <Label font="$x1" layoutX="311.0" layoutY="230.0" prefHeight="35.0" prefWidth="80.0" text="手机号:" />
+        <TextField fx:id="username" layoutX="399.0" layoutY="45.0" prefWidth="200.0" />
+        <TextField fx:id="phone" layoutX="399.0" layoutY="235.0" prefWidth="200.0" />
+        <ChoiceBox fx:id="age" layoutX="399.0" layoutY="192.0" maxHeight="5.0" opacity="1.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="1" />
+              <String fx:value="2" />
+              <String fx:value="3" />
+              <String fx:value="4" />
+              <String fx:value="5" />
+              <String fx:value="6" />
+              <String fx:value="7" />
+              <String fx:value="8" />
+              <String fx:value="9" />
+              <String fx:value="10" />
+              <String fx:value="11" />
+              <String fx:value="12" />
+              <String fx:value="13" />
+              <String fx:value="14" />
+              <String fx:value="15" />
+              <String fx:value="16" />
+              <String fx:value="17" />
+              <String fx:value="18" />
+              <String fx:value="19" />
+              <String fx:value="20" />
+              <String fx:value="21" />
+              <String fx:value="22" />
+              <String fx:value="23" />
+              <String fx:value="24" />
+              <String fx:value="25" />
+              <String fx:value="26" />
+              <String fx:value="27" />
+              <String fx:value="28" />
+              <String fx:value="29" />
+              <String fx:value="30" />
+              <String fx:value="31" />
+              <String fx:value="32" />
+              <String fx:value="33" />
+              <String fx:value="34" />
+              <String fx:value="35" />
+              <String fx:value="36" />
+              <String fx:value="37" />
+              <String fx:value="38" />
+              <String fx:value="39" />
+              <String fx:value="40" />
+              <String fx:value="40+" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+        <PasswordField fx:id="pass" layoutX="399.0" layoutY="94.0" prefWidth="200.0" />
+        <RadioButton fx:id="male" layoutX="399.0" layoutY="143.0" mnemonicParsing="false" text="男">
+          <toggleGroup>
+            <ToggleGroup fx:id="sex" />
+          </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="female" layoutX="542.0" layoutY="143.0" mnemonicParsing="false" text="女" toggleGroup="$sex" />
+        <Button fx:id="submit" layoutX="339.0" layoutY="295.0" mnemonicParsing="false" onAction="#todata" prefHeight="20.0" prefWidth="80.0" text="注册" />
+        <Button fx:id="returnlog2" layoutX="510.0" layoutY="295.0" mnemonicParsing="false" onAction="#tologin" prefHeight="20.0" prefWidth="80.0" text="返回" />
+        <ImageView fitHeight="353.0" fitWidth="276.0" layoutX="0.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="false" />
+        <ImageView fitHeight="350.0" fitWidth="236.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+          <image>
+            <Image url="@../Image/register.png" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

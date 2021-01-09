@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="648.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Login.Controller">
+  <children>
+    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="154.0" prefWidth="648.0">
+      <children>
+        <ImageView fitHeight="158.00010681152344" fitWidth="648.0" layoutX="-1.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+          <image>
+            <Image url="@../Image/logmain.png" />
+          </image>
+        </ImageView>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="-3.0" layoutY="154.0" minHeight="0.0" minWidth="0.0" prefHeight="396.0" prefWidth="655.0">
+      <children>
+        <ImageView fitHeight="396.0" fitWidth="655.0" image="$null" layoutX="-5.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false" />
+        <Label layoutX="83.0" layoutY="14.0" prefHeight="95.0" prefWidth="497.0" text="欢迎来到Hi贴吧!" textAlignment="CENTER" textFill="#10cc00" textOverrun="ELLIPSIS" underline="false">
+          <font>
+            <Font size="67.0" />
+          </font>
+        </Label>
+        <Label id="uName" layoutX="174.0" layoutY="122.0" prefHeight="30.0" prefWidth="65.0" text="用户名:" textAlignment="CENTER" textFill="BLACK">
+          <font>
+            <Font size="20.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="174.0" layoutY="180.0" prefHeight="30.0" prefWidth="65.0" text="密码:" textAlignment="CENTER" textFill="BLACK" textOverrun="ELLIPSIS" wrapText="false" />
+        <TextField fx:id="userName" layoutX="270.0" layoutY="122.0" prefHeight="30.0" prefWidth="200.0" text="" />
+        <PasswordField fx:id="userPass" layoutX="270.0" layoutY="180.0" prefHeight="30.0" prefWidth="200.0" />
+        <Button fx:id="loging" layoutX="174.0" layoutY="300.0" mnemonicParsing="false" onAction="#tobar" opacity="1.0" prefHeight="44.0" prefWidth="296.0" style="" text="登               录" textAlignment="CENTER" textFill="WHITE">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </Button>
+        <CheckBox layoutX="127.0" layoutY="236.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="112.0" text="记住密码">
+          <font>
+            <Font size="18.0" fx:id="x2" />
+          </font>
+        </CheckBox>
+        <CheckBox font="$x2" layoutX="280.0" layoutY="236.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="112.0" text="自动登录" />
+        <Label fx:id="fin" layoutX="440.0" layoutY="236.0" onMouseClicked="#tofind" prefHeight="36.0" prefWidth="86.0" text="找回密码">
+          <font>
+            <Font size="19.0" />
+          </font>
+        </Label>
+        <Label fx:id="ris" layoutX="491.0" layoutY="352.0" onMouseClicked="#toris" prefHeight="30.0" prefWidth="150.0" text="没有账号？注册一个" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
